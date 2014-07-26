@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanvasViewController">
             <connections>
+                <outlet property="canvasView" destination="osS-mx-CLM" id="dNi-W4-5kc"/>
+                <outlet property="trayScrollView" destination="YhV-dp-QRU" id="CnD-4g-X8O"/>
+                <outlet property="trayView" destination="eq4-g7-E1r" id="EHC-Wl-kdA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,9 +16,126 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="osS-mx-CLM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="eq4-g7-E1r">
+                    <rect key="frame" x="0.0" y="490" width="320" height="78"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YhV-dp-QRU">
+                            <rect key="frame" x="0.0" y="23" width="320" height="55"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogeAlpaca" id="jnc-6p-lB7">
+                                    <rect key="frame" x="20" y="0.0" width="44" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.20841261744499207" green="0.54245638847351074" blue="0.99204510450363159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="yaP-9V-SNM" appends="YES" id="2bo-UU-nZp"/>
+                                    </connections>
+                                </imageView>
+                                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogeTaco" id="nfa-WB-pHp">
+                                    <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.14117647707462311" green="0.7568628191947937" blue="0.72549021244049072" alpha="1" colorSpace="deviceRGB"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="Rps-WP-Hbr" appends="YES" id="3Im-Hy-AtQ"/>
+                                    </connections>
+                                </imageView>
+                                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogeStare" id="Kuh-nq-bIV">
+                                    <rect key="frame" x="148" y="0.0" width="44" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.59215688705444336" green="0.87058830261230469" blue="0.20000001788139343" alpha="1" colorSpace="deviceRGB"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="sgB-h6-uFe" appends="YES" id="lPM-BX-ImZ"/>
+                                    </connections>
+                                </imageView>
+                                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogeRawr" id="rhz-nU-cJG">
+                                    <rect key="frame" x="212" y="0.0" width="44" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.89019614458084106" green="0.81960791349411011" blue="0.18039216101169586" alpha="1" colorSpace="deviceRGB"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="ZEv-XR-VU7" appends="YES" id="RK6-jH-jSd"/>
+                                    </connections>
+                                </imageView>
+                                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogePizza" id="gvh-hZ-nq6">
+                                    <rect key="frame" x="276" y="0.0" width="44" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88627457618713379" green="0.33725491166114807" blue="0.10588236153125763" alpha="1" colorSpace="deviceRGB"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="Zh1-3e-aP9" appends="YES" id="UxB-c0-5q7"/>
+                                    </connections>
+                                </imageView>
+                            </subviews>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                    <size key="value" width="568" height="55"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </scrollView>
+                        <imageView alpha="0.40000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragBar" id="5xX-wh-6QM">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="gih-CR-2kT" appends="YES" id="zg0-ZC-1Pc"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.28330078721046448" green="0.28335553407669067" blue="0.28329735994338989" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99000018835067749" green="0.98950487375259399" blue="0.98010009527206421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="yaP-9V-SNM">
+            <connections>
+                <action selector="onImagePan:" destination="-1" id="xzG-TT-WjE"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="Rps-WP-Hbr">
+            <connections>
+                <action selector="onImagePan:" destination="-1" id="yLP-JD-qbD"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="sgB-h6-uFe">
+            <connections>
+                <action selector="onImagePan:" destination="-1" id="i8p-mE-ESl"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="ZEv-XR-VU7">
+            <connections>
+                <action selector="onImagePan:" destination="-1" id="52j-sj-cpY"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="Zh1-3e-aP9">
+            <connections>
+                <action selector="onImagePan:" destination="-1" id="mgz-qX-gtw"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="gih-CR-2kT">
+            <connections>
+                <action selector="onTrayPan:" destination="-1" id="jv3-bf-OzD"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
+    <resources>
+        <image name="dogeAlpaca" width="320" height="320"/>
+        <image name="dogePizza" width="320" height="320"/>
+        <image name="dogeRawr" width="320" height="320"/>
+        <image name="dogeStare" width="320" height="320"/>
+        <image name="dogeTaco" width="320" height="320"/>
+        <image name="dragBar" width="34" height="7"/>
+    </resources>
 </document>

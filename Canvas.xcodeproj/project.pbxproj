@@ -19,6 +19,8 @@
 		52231BBE19611CF40087900F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52231BA619611CF40087900F /* UIKit.framework */; };
 		52231BC619611CF40087900F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52231BC419611CF40087900F /* InfoPlist.strings */; };
 		52231BC819611CF40087900F /* CanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52231BC719611CF40087900F /* CanvasTests.m */; };
+		52231BD419611F150087900F /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52231BD219611F150087900F /* CanvasViewController.m */; };
+		52231BD519611F150087900F /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52231BD319611F150087900F /* CanvasViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		52231BC319611CF40087900F /* CanvasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanvasTests-Info.plist"; sourceTree = "<group>"; };
 		52231BC519611CF40087900F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52231BC719611CF40087900F /* CanvasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasTests.m; sourceTree = "<group>"; };
+		52231BD119611F150087900F /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		52231BD219611F150087900F /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		52231BD319611F150087900F /* CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				52231BB119611CF40087900F /* AppDelegate.h */,
 				52231BB219611CF40087900F /* AppDelegate.m */,
+				52231BD119611F150087900F /* CanvasViewController.h */,
+				52231BD219611F150087900F /* CanvasViewController.m */,
+				52231BD319611F150087900F /* CanvasViewController.xib */,
 				52231BB419611CF40087900F /* Images.xcassets */,
 				52231BA919611CF40087900F /* Supporting Files */,
 			);
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52231BD519611F150087900F /* CanvasViewController.xib in Resources */,
 				52231BAD19611CF40087900F /* InfoPlist.strings in Resources */,
 				52231BB519611CF40087900F /* Images.xcassets in Resources */,
 			);
@@ -241,6 +250,7 @@
 			files = (
 				52231BB319611CF40087900F /* AppDelegate.m in Sources */,
 				52231BAF19611CF40087900F /* main.m in Sources */,
+				52231BD419611F150087900F /* CanvasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
